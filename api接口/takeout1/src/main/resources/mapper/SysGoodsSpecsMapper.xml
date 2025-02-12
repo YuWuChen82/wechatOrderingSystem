@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.web.goods_specs.mapper.SysGoodsSpecsMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.web.goods_specs.entity.SysGoodsSpecs">
+            <id property="specsId" column="specs_id" jdbcType="INTEGER"/>
+            <result property="goodsId" column="goods_id" jdbcType="INTEGER"/>
+            <result property="specsName" column="specs_name" jdbcType="VARCHAR"/>
+            <result property="goodsPrice" column="goods_price" jdbcType="DECIMAL"/>
+            <result property="orderNum" column="order_num" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        specs_id,goods_id,specs_name,
+        goods_price,order_num
+    </sql>
+</mapper>

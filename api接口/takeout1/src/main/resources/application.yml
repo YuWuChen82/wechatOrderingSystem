@@ -1,0 +1,26 @@
+server:
+  port: 8081
+spring:
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/order_system?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=UTC
+      username: order
+      password: 123456
+
+#图片上传
+web:
+  uploadpath: D:/images/  #图片上传路径
+  load-path: file:D://images/  #图片访问路径
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      update-strategy: not_empty
+
+Wechat:
+  Applets:
+    appId: wx9002419c953ad18f
+    appSecret: 3aaaf06af17fe4e4b80be3a7d56b3970
+
